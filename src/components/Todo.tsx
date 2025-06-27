@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import type { Todotype } from "../TodoList";
 
 interface TodoProps {

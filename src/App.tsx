@@ -1,9 +1,6 @@
 import { Link, Outlet } from "react-router";
-import RenderAnyName from "./components/test/test-name";
-import { useState } from "react";
 
 function App() {
-  const [valid, setValid] = useState(false);
   return (
     <>
       {/* <RenderAnyName isValid={valid} age={18} name="Ayush" />

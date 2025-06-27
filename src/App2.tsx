@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Greeting from './Projects/Greeting'
 
 function App2() {

@@ -1,4 +1,3 @@
-import React from "react";
 import img from "./Images/HI.png";
 
 function Contact() {
