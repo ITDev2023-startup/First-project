@@ -27,8 +27,8 @@ export default function Loginpage({
       setIsLoggedIn(true);
       localStorage.setItem("isLoggedIn", "true");
       navigate("/Home");
-      alert("Logged in");
       setInputValue({ email: "", password: "" });
+      alert("Logged in");
     } else {
       alert("Entered wrong email or password");
     }
@@ -38,7 +38,7 @@ export default function Loginpage({
     <>
       <div className="bg-[#93c5fd] flex justify-center w-full p-5 h-[50vh]">
         <form
-          className="flex flex-col bg-blue-200 border-2 w-[25%] h-[105%] rounded-xl p-2 gap-2"
+          className="flex flex-col bg-blue-200 border-2 w-[20%] h-[100%] rounded-xl p-2 gap-2"
           onSubmit={(e) => e.preventDefault()}
         >
           <label className="px-4 pt-6 b text-gray-600">E-mail</label>
@@ -81,7 +81,7 @@ export default function Loginpage({
             className="cursor-pointer text-xl border-2 rounded-xl hover:scale-[1.05] hover:shadow-2xl shadow-blue-900 duration-300 font-medium px-3 py-2 bg-blue-400 text-white"
             onClick={() => {
               setIsLoggedIn(false);
-              localStorage.setItem("isLoggedIn", "true");
+              localStorage.setItem("isLoggedOut", "true");
               alert("Logged out");
             }}
           >
